@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %} {{ post.title }} {% endblock %}
+{% block title %} {{ post.title|markdown }} {% endblock %}
 
 {% block content %}
 <div class="container content-container">
@@ -17,7 +17,7 @@
             {% else %}
             <div class="post-page-block">
             {% endif %}
-               <h3>{{post.title}}</h3>
+               <h3>{{post.title|markdown}}</h3>
                 <p class="p-small-two text-muted md-0">
                     {{ post.created_at.strftime('%d.%m.%Y') }}
                 </p>

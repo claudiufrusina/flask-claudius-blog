@@ -11,7 +11,9 @@
             <div class="about-page-block">
                 <p class="lead">About Me.</p>
                 <hr>
-                {{ lipsum() }}     
+                <p>
+                    {% include 'cv.txt' %}
+                </p>    
                 <hr>
                 <a class="btn btn-sm btn-outline-secondary" href="{{ url_for('contact') }}">Contact me</a>
             </div>    

@@ -11,15 +11,16 @@
             <div class="single-post-home">                           
                 <h5>
                     <a class="custom-link" href="{{ url_for('post_detail', post_slug=post.slug) }}" >
-                        {{ post.title }}
+                        {{ post.title|markdown }}
                     </a>
                 </h5>
                 <p class="p-small-two text-muted md-0">
                     {{ post.created_at.strftime('%d.%m.%Y') }}
                 </p>
                 {% if post.description %}
+                <hr>
                 <p class="p-small-one text-muted md-0">
-                    {{ post.description }}
+                    {{ post.description|markdown }}
                     <a class="read-more" href="{{ url_for('post_detail', post_slug=post.slug) }}">Leggi articolo.</a>
                 </p>
                 {% endif %}
