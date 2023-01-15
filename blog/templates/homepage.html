@@ -7,10 +7,10 @@
     <div class="row no-gutters">
 
         <div class="col-md-9 order-md-2">
-            {% for post in posts %}
+            {% for post in posts.items %}
             <div class="single-post-home">                           
                 <h5>
-                    <a class="custom-link" href="{{ url_for('post_detail', post_id=post.id) }}" >
+                    <a class="custom-link" href="{{ url_for('post_detail', post_slug=post.slug) }}" >
                         {{ post.title }}
                     </a>
                 </h5>
@@ -20,10 +20,23 @@
                 {% if post.description %}
                 <p class="p-small-one text-muted md-0">
                     {{ post.description }}
+                    <a class="read-more" href="{{ url_for('post_detail', post_slug=post.slug) }}">Leggi articolo.</a>
                 </p>
                 {% endif %}
             </div>
-            {% endfor %}         
+            {% endfor %}
+            <div class="pagination-block">
+                {% if previous_page %}
+                    {% if current_page == 2 %}
+                    <a href="/" class="btn btn-sm btn-outline-secondary">Indietro</a>
+                    {% else %}
+                    <a href="{{ previous_page }}" class="btn btn-sm btn-outline-secondary">Indietro</a>
+                    {% endif %}
+                {% endif %}
+                {% if next_page %}
+                <a href="{{ next_page }}" class="btn btn-sm btn-outline-secondary">Avanti</a>
+                {% endif %}
+            </div>         
         </div>
         <div class="col-md-3 order-md-1">
             {% include 'about_me_snippet.html' %}           

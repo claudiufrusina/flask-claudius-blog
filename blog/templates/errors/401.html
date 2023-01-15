@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}About{% endblock %}
+{% block title %}401 Pagina non trovata{% endblock %}
 
 {% block content %}
 <div class="container content-container">
@@ -9,11 +9,12 @@
 
         <div class="col-md-9 order-md-2">
             <div class="about-page-block">
-                <p class="lead">About Me.</p>
+                <p class="lead">Errore 401</p>
                 <hr>
-                {{ lipsum() }}     
+                <p>Accesso negato!</p>
+                <p>Non di dispone dei permessi necessari. Cosa stavi cercando di fare?</p>
                 <hr>
-                <a class="btn btn-sm btn-outline-secondary" href="{{ url_for('contact') }}">Contact me</a>
+                <a href="{{ url_for('homepage') }}" class="btn btn-outline-secondary">Visualizza tutti i post</a>
             </div>    
         </div>
 

@@ -8,12 +8,28 @@
     <div class="row no-gutters">
 
         <div class="col-md-9 order-md-2">
+            
+            {% if post.image %}
+            <div class="post-image-block">
+                <img class="img-fluid post-image" src="{{url_for('static', filename='img/posts/' + post.image) }}" alt="">
+            </div>
+            <div class="post-page-block no-border-top">
+            {% else %}
             <div class="post-page-block">
+            {% endif %}
                <h3>{{post.title}}</h3>
                 <p class="p-small-two text-muted md-0">
                     {{ post.created_at.strftime('%d.%m.%Y') }}
                 </p>
-                <p>{{post.body}}</p>
+                {% if current_user.is_authenticated and current_user == post.author %}
+                <a  class="btn btn-sm btn-outline-success mr-1" href="{{ url_for('post_update', post_id=post.id) }}">Aggiorna</a>
+                <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deletePostModal">
+                    Cancella
+                </button>
+                {% endif %}
+                <p>{{post.body|markdown}}</p>
+                <hr>
+                <a href="{{ url_for('homepage') }}" class="btn btn-outline-secondary">Visualizza tutti i post</a>
             </div>
         </div>
 
@@ -24,4 +40,6 @@
     </div>
 
 </div>
+{% include 'post_delete_modal.html' %}
+
 {% endblock %}
