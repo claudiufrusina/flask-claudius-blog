@@ -2,10 +2,10 @@
 This is My first project written in python using Flask framework.
 
 For the first time during the setup you should run the command: 
->>    pip install -r requirements.txt. <br>
+>> pip install -r requirements.txt. <br>
 This command will download for you all the dependencies is needed.
 Then add a new .env file in where you need to put a parameter called SECRET_KEY=... a hash key generated for example by running in your cmd:
->>  python <br>
+>> python <br>
 The write the the snippet below:
 >> import uuid <br>
 >> print(uuid.uuid4().hex) <br>
