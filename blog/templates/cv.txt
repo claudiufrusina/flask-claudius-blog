@@ -1,0 +1,17 @@
+Mi chiamo Claudiu Frusina e sono un software developer per una multinazionale sw vendor operante nel ambito di consulenza per clienti assicurati.
+Ma iniziamo dall'inizio...<br>
+[ Ho iniziato con la programmazione scolastica a basso-medio livello con Assembly e poi ho continuato con altri vari linguaggi più ad alto livello come il linguaggio C e Java e infine
+per lavoro ho dovuto imparare ad utilizzare Java EE & ASP.NET (con i quali tuttora lavoro).
+Utilizzo spesso e volentieri nuovi framework come ad esempio ZK con il pattern MVVM integrando il tutto su web app JEE per progetti cliente.
+Conosco Javascript (JQuery, Bootstrap etc), HTML e CSS/3 per la creazione di semplici pagine web client-side utili anche nella gestione del front-end sui vari Framework.
+So utilizzare anche vari linguaggi marcatori come XML, XSL e XSTL (Apache FOP) per la generazione di stampe formato PDF.
+Ho partecipato annualmente a vari seminari come le conferenze "Torino Droidcon" (edizione 14-15-16) oppure a corsi serali come la TorinoJS quando posso.
+Momentaneamente sto seguendo vari corsi online ( particolarmente Udemy) per imparare a sviluppare WebApp in Angular 8+ o Python usando Flask, ma anche PL/SQL di Oracle.
+Da studente ho partecipato a corsi extra scolastici tenuti da Telecom Italia riguardo alle loro tecnologie di trasmissione . Ho anche visitato la sede Telecom LAB di Torino.
+Buona conoscenza anche della sistemistica e della creazione di reti LAN , dei protocolli Ethernet ect.
+Il mio obiettivo per il futuro è quello di approfondire il mondo di Python (molto affascinante) ma anche specializzarmi sugli ambienti cloud-size come Azure, AWS e Google-Cloud.
+Sono attualmente in possesso dell' attestato di inglese PETfS della Cambridge ESOL che attesta il mio livello di inglese B1 anche se sto puntando ad un C1 nel breve periodo.
+Infine, posso assicurarvi che sono serio e volenteroso, con un'ottima abilità per il problem solving e una generale conoscenza del mondo IT.
+Per il resto sono sempre disposto ad imparare ] ;)
+<br>
+<i><b> Vi ricordo inoltre che questo blog è stato realizzato da me usando il framework flask/jinja2 e deployato su VPS di DigitalOcean. </b></i>
