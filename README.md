@@ -1,4 +1,4 @@
-# flask-claudius-blog
+# flask-your-blog
 This is My first project written in python using Flask framework.
 
 For the first time during the setup you should run the command: 
